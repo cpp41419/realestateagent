@@ -123,7 +123,7 @@ export default function Footer() {
               <h3 className="font-semibold text-lg mb-4 text-yellow-400">{section.title}</h3>
               <ul className="space-y-3">
                 {section.links.map((link, index) => {
-                  const IconComponent = link.icon
+                  const IconComponent = (link as any).icon
                   return (
                     <li key={index}>
                       <a 
@@ -154,7 +154,7 @@ export default function Footer() {
                 <h3 className="font-semibold text-lg mb-4">{section.title}</h3>
                 <ul className="space-y-3">
                   {section.links.map((link, index) => {
-                    const IconComponent = link.icon
+                    const IconComponent = (link as any).icon
                     return (
                       <li key={index}>
                         <a 
@@ -220,7 +220,7 @@ export default function Footer() {
                 <h3 className="font-semibold text-lg mb-4">{section.title}</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {section.links.map((link, index) => {
-                    const IconComponent = link.icon
+                    const IconComponent = (link as any).icon
                     return (
                       <a 
                         key={index}

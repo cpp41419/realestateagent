@@ -217,7 +217,7 @@ export default function InteractiveArticle() {
                         </div>
                         <div className="flex justify-between">
                           <span>REA Group algorithm accuracy:</span>
-                          <span className="font-bold text-blue-600">>95%</span>
+                          <span className="font-bold text-blue-600">&gt;95%</span>
                         </div>
                       </div>
                     </div>

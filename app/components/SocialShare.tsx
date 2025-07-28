@@ -138,7 +138,7 @@ export default function SocialShare() {
             </div>
 
             {/* Native Share (if available) */}
-            {typeof navigator !== 'undefined' && navigator.share && (
+            {typeof navigator !== 'undefined' && typeof navigator.share === 'function' && (
               <button
                 onClick={() => handleShare('native')}
                 className="w-full flex items-center justify-center gap-2 p-3 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-colors"
